@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Votación</title>
+</head>
+<body>
+    <h1>Formulario de Votación</h1>
+
+    <form action="votos.php" method="post">
+    <table>
+        <tr>
+          <td><label for="nombre_apellido">Nombre y Apellido</label></td>
+          <td><input type="text" id="nombre_apellido" name="nombre_apellido" required></td>
+        </tr>
+        <tr>
+            <td><label for="Alias">Alias</label></td>
+            <td><input type="text" id="Alias" name="Alias"></td>
+        </tr>
+        <tr>
+            <td><label for="Rut">RUT</label></td>
+            <td><input type="text" id="Rut" name="Rut"  required>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Email">Email</label></td>
+            <td><input type="email" id="Email" name="Email" required></td>
+        </tr>
+        <tr>
+            <td><label for="Region">Region</label></td>
+            <td>  
+                <select name="Region" id="Region" required>
+                    <option value="" disabled selected>Selecciona Región</option>
+              </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Comuna">Comuna</label></td>
+            <td>  
+                <select name="Comuna" id="Comuna" required>
+                    <option value="" disabled selected>Selecciona Comuna</option>
+              </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Candidato">Candidato</label></td>
+            <td>  
+                <select name="Candidato" id="Candidato" required>
+                    <option value="" disabled selected>Selecciona un Candidato</option>
+              </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="como_supo">Como se entero de nosotros</label></td>
+            <td> 
+                <input type="checkbox" name="como_supo[]" value="1"> Web
+                <input type="checkbox" name="como_supo[]" value="2"> TV
+                <input type="checkbox" name="como_supo[]" value="3"> Redes Sociales
+                <input type="checkbox" name="como_supo[]" value="4"> Amigo
+
+            </td>
+           
+        </tr>
+        <tr>
+            <td><br><br><button type="submit">Votar</button></td>
+        </tr>
+     
+      </table>
+    </form>
+</body>
+
+</html>
