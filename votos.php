@@ -28,7 +28,11 @@ if ($conn->query($sql) === TRUE) {
     }
 
     echo "Gracias por votar.";
-
+    echo '<script>
+    setTimeout(function() {
+        window.location.href = "resultados.php";
+    }, 2000); // 2000 milisegundos (2s)
+    </script>';
     
 } else {
     echo "Error al registrar el voto: " . $conn->error;

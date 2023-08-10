@@ -1,0 +1,40 @@
+# Sistema de Votación
+
+Sistema de votación web para prueba tecnica desarrollado con HTML, PHP, Js (jQuery) y MySQL.
+
+## Características
+
+- Permite a los usuarios votar por candidatos.
+- Registra información como nombre, alias, RUT, email, región, comuna y candidato elegido.
+- Los usuarios pueden indicar cómo se enteraron del sistema mediante opciones múltiples.
+
+## Requisitos
+
+- Servidor web (como Apache) con PHP habilitado (para este proyecto se utilizo XAMPP).
+- Base de datos MySQL.
+- Conexión a Internet (para jQuery).
+
+## Instalación
+
+1. Clonar este repositorio en tu servidor web local o en tu hosting:
+    [Sis-Votacion](https://github.com/el-Bossman/Sis-Votacion)
+
+2. Configurar la conexión a la base de datos editando el archivo `conexion.php`.
+
+3. Importar el archivo `votacion.sql` en tu base de datos MySQL para crear las tablas.
+
+4. Acceder al sistema a través del navegador, por ejemplo: `http://localhost/sis-votacion`.
+
+
+## Uso
+
+1. Los usuarios pueden visitar la página de votación, ingresar sus datos y seleccionar su candidato.
+
+2. Pueden elegir cómo se enteraron del sistema marcando 2 o más opciones.
+
+3. Después de votar, los usuarios verán un mensaje de confirmación y serán redirigidos a la página de resultados.
+
+## Notas
+
+Tomé la libertad de añadir una página de resultados para que la información de la base de datos sea visible. `resultados.php` me pareció útil, ya que al tratarse de una votación, consideré importante conocer tanto al ganador como a los votantes.
+
